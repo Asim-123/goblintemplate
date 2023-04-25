@@ -89,7 +89,10 @@ body {
     nav {
       display: none;
     }
-  
+    main {
+      display: flex;
+      flex-direction: column;
+    }
     .hamburger {
       display: block;
       cursor: pointer;
@@ -139,16 +142,24 @@ body {
     }
   }
   @media only screen and (max-width: 480px) {
-    nav.active ul li {
-    font-size: 1.5rem;
-    padding: 20px;
+    nav ul li {
+    font-size: 0.8rem;
+    padding: 10px;
     }
-    
+    main {
+      display: flex;
+      flex-direction: column;
+    }
     .left-section h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     }
     
     .left-section h4 {
     font-size: 1.2rem;
+    }
+    
+    .right-section img:hover {
+    transform: translate3d(-50px, 0, 0);
+    transition: 3s;
     }
     }
